@@ -8,8 +8,9 @@ runs:
       with:
         path: |
           ~/.cargo/bin/
-          ~/.cargo/registry/index/
           ~/.cargo/registry/cache/
+          ~/.cargo/registry/index/
+          ~/.cargo/registry/src/
           ~/.cargo/git/db/
           target/
         key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
