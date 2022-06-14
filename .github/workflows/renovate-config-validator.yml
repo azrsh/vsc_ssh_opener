@@ -16,7 +16,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'yarn'
+
+      - name: Cache .yarn directory
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.yarn/bin/
+          key: ${{ runner.os }}-yarn
 
       - name: Install Renovate CLI
         run: yarn global add renovate
