@@ -13,6 +13,8 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v3
 
+      - uses: ./.github/actions/cargo-cache
+
       - name: Install cargo sort
         run: cargo install cargo-sort
 
