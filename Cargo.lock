@@ -86,7 +86,6 @@ dependencies = [
  "path-absolutize",
  "rmp-serde",
  "serde",
- "serde_json",
  "shellexpand",
 ]
 
@@ -109,7 +108,6 @@ dependencies = [
  "rmp-serde",
  "serde",
  "serde_json",
- "shellexpand",
 ]
 
 [[package]]
