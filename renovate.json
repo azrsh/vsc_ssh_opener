@@ -7,6 +7,8 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "lockFileMaintenance"],
+      "automerge": true,
+      "automergeType": "pr",
       "platformAutomerge": true
     }
   ]
