@@ -12,4 +12,4 @@ gethostname = "0.4.1"
 path-absolutize = "3.0.14"
 rmp-serde = "1.1.1"
 serde = { version = "1.0", features = ["derive"] }
-shellexpand = "2.1.2"
+shellexpand = "3.0.0"
