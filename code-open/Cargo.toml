@@ -8,7 +8,7 @@ edition = "2018"
 [dependencies]
 clap = { version = "=4.2.1", features = ["derive"] }
 code-open-common = { path = "../code-open-common" }
-gethostname = "=0.4.1"
+gethostname = "=0.4.2"
 path-absolutize = "=3.0.14"
 rmp-serde = "=1.1.1"
 serde = { version = "=1.0.160", features = ["derive"] }
