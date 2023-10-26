@@ -17,25 +17,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      
-      - name: Get cache dirs
-        id: cache-dirs
-        run: |
-          echo "::set-output name=cache-dir::$(yarn cache dir)"
-          echo "::set-output name=global-dir::$(yarn global dir)"
-          echo "::set-output name=global-bin::$(yarn global bin)"
-
-      - name: Cache Deps
-        uses: actions/cache@v3
-        with:
-          path: |
-            ${{ steps.cache-dirs.outputs.cache-dir }}
-            ${{ steps.cache-dirs.outputs.global-dir }}
-            ${{ steps.cache-dirs.outputs.global-bin }}
-          key: ${{ runner.os }}-renovate-config-validator
 
       - name: Install Renovate CLI
-        run: yarn global add renovate
+        run: npm install -g renovate
 
       - name: Validate renovate.json
         run: renovate-config-validator
