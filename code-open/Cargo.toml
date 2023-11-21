@@ -11,5 +11,5 @@ code-open-common = { path = "../code-open-common" }
 gethostname = "=0.4.3"
 path-absolutize = "=3.1.1"
 rmp-serde = "=1.1.2"
-serde = { version = "=1.0.192", features = ["derive"] }
+serde = { version = "=1.0.193", features = ["derive"] }
 shellexpand = "=3.1.0"
